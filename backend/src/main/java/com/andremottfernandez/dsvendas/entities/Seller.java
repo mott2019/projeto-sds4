@@ -20,7 +20,7 @@ public class Seller {
 	private Long id;
 	private String name;
 	
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "seller")
+	@OneToMany(mappedBy = "seller")
 	private List<Sale> sales = new ArrayList<>();
 	
 	public Seller() {
